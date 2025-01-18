@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxu.az Klonu - Şəkillərlə</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #0056b3;
+            color: #fff;
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background: white;
+            color: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        article {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        article img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        article h3 {
+            margin: 10px;
+            color: #0056b3;
+        }
+
+        article p {
+            margin: 0 10px 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .ads {
+            grid-column: span 2;
+            margin: 10px 0;
+            padding: 10px;
+            background: #ffcc00;
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .ads:hover {
+            background: #ffaa00;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Oxu.az Klonu - Şəkillərlə</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Səhifə</a></li>
+                <li><a href="#">Siyasət</a></li>
+                <li><a href="#">İdman</a></li>
+                <li><a href="#">Mədəniyyət</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <img src="1.jpg" alt="Xəbər 1 şəkli">
+                <h3>Xəbər 1</h3>
+                <p>Bu, birinci xəbərdir. Ətraflı oxumaq üçün düyməni basın.</p>
+                <button onclick="showDetails('Birinci xəbər haqqında daha ətraflı məlumat...')">Ətraflı Oxu</button>
+            </article>
+            <article>
+                <img src="2.jpg" alt="Xəbər 2 şəkli">
+                <h3>Xəbər 2</h3>
+                <p>Bu, ikinci xəbərdir. Ətraflı oxumaq üçün düyməni basın.</p>
+                <button onclick="showDetails('İkinci xəbər haqqında daha ətraflı məlumat...')">Ətraflı Oxu</button>
+            </article>
+            <article>
+                <br>
+                <img src="4.jpg" alt="Xəbər 3 şəkli">
+                <h3>Xəbər 3</h3>
+                <p>Bu, üçüncü xəbərdir. Ətraflı oxumaq üçün düyməni basın.</p>
+                <button onclick="showDetails('Üçüncü xəbər haqqında daha ətraflı məlumat...')">Ətraflı Oxu</button>
+            </article>
+            <article>
+                <img src="3.jpg" alt="Xəbər 4 şəkli">
+                <h3>Xəbər 4</h3>
+                <p>Bu, dördüncü xəbərdir. Ətraflı oxumaq üçün düyməni basın.</p>
+                <button onclick="showDetails('Dördüncü xəbər haqqında daha ətraflı məlumat...')">Ətraflı Oxu</button>
+            </article>
+            <div class="ads" onclick="alert('Reklam linkinə yönləndirilirsiniz!')">
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Oxu.az Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <script>
+        function showDetails(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
